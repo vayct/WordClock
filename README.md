@@ -10,4 +10,8 @@ for this project may be enlarging it to include the weather and other smaller
 apps around the clock. 
 
 
+Be aware that running the RGBMatrix requires root privileges. Therefore you will need to run all 
+your Python scripts using sudo.
+
+
 
