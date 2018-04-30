@@ -36,7 +36,7 @@ If cloning this repo and doing the following commands fail, follow the steps bel
 ```shell
 cd WordClock/python/software
 sudo ./wordclock.py
-```shell
+```
 
 
 1. Connect the Pi to the Adafruit RGB Matrix HAT, and then connect the HAT to the LED matrix panel.
