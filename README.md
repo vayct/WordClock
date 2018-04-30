@@ -54,12 +54,14 @@ make build-python
 sudo make install-python
 ```
 
-8. Now, change into the directory `cd bindings/python/`
+8. Now `cd` to home directory and do `git clone https://github.com/vayct/WordClock`
 
-9. Clone this repo with 'git clone https://github.com/vayct/WordClock'
+9. Copy the software directory in this repo to /rpi-rgb-led-matrix/bindings/python directory using:
+`cp WordClock/python/software/ rpi-rgb-led-matrix/bindings/python -r`
 
-10. 
 
+10. Change to the directory `cd rpi-rgb-led-matrix/bindings/python/software/`
 
+11. Start the clock by using `sudo ./wordclock.py`
 
 
