@@ -31,6 +31,14 @@ This project is based on using:
 Quick Installation Guide
 ========================
 
+If cloning this repo and doing the following commands fail, follow the steps below.
+
+```shell
+cd WordClock/python/software
+sudo ./wordclock.py
+```shell
+
+
 1. Connect the Pi to the Adafruit RGB Matrix HAT, and then connect the HAT to the LED matrix panel.
    Additional instructions can be found on: https://learn.adafruit.com/adafruit-rgb-matrix-plus-real-time-clock-hat-for-raspberry-pi/driving-matrices
    
