@@ -15,3 +15,15 @@ your Python scripts using sudo.
 
 
 
+Overview
+========
+
+This project is based on using:
+- 32x32 RGB LED matrix panels from Adafruit: https://www.adafruit.com/product/607
+- Adafruit RGB Matrix HAT from https://www.adafruit.com/product/2345
+- Raspberry Pi 3 B+
+
+
+
+
+
