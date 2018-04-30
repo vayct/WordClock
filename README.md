@@ -19,9 +19,23 @@ Overview
 ========
 
 This project is based on using:
-- 32x32 RGB LED matrix panels from Adafruit: https://www.adafruit.com/product/607
+- 32x32 RGB LED matrix panel from Adafruit: https://www.adafruit.com/product/607
 - Adafruit RGB Matrix HAT from https://www.adafruit.com/product/2345
 - Raspberry Pi 3 B+
+
+
+Quick Installation Guide
+========================
+
+1. Connect the Pi to the Adafruit RGB Matrix HAT, and then connect the HAT to the LED matrix panel.
+   Additional instructions can be found on: https://learn.adafruit.com/adafruit-rgb-matrix-plus-real-time-clock-hat-for-raspberry-pi/driving-matrices
+   
+   
+2. Log in to the Raspberry Pi and set up timezone by running `sudo raspi-config`
+
+3. Configure the RTC
+
+
 
 
 
