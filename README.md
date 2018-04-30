@@ -54,6 +54,12 @@ make build-python
 sudo make install-python
 ```
 
+8. Now, change into the directory `cd bindings/python/`
+
+9. Clone this repo with 'git clone https://github.com/vayct/WordClock'
+
+10. 
+
 
 
 
