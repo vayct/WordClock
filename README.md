@@ -38,11 +38,18 @@ Quick Installation Guide
 2. Log in to the Raspberry Pi and set up timezone by running `sudo raspi-config`
 
 3. Configure the RTC at https://www.raspberrypi.org/forums/viewtopic.php?f=66&t=125003
-- Note that the RTC is a `ds1307`
+   - Note that the RTC is a `ds1307`
 
+4. Clone hzeller's library with: `git clone https://github.com/hzeller/rpi-rgb-led-matrix`
 
+5. Change into the directoary of the repository: `cd rpi-rgb-led-matrix/lib/`
 
+6. In the Makefile, change the line `HARDWARE_DESC?=regular` to `HARDWARE_DESC?=adafruit-hat`
 
+7. Then, in the root directory for the matrix library `/rpi-rgb-led-matrix `, type in the following commands:
+`sudo apt-get update && sudo apt-get install python2.7-dev python-pillow -y
+make build-python
+sudo make install-python`
 
 
 
