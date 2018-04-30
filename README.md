@@ -31,6 +31,7 @@ This project is based on using:
 Quick Installation Guide
 ========================
 ```shell
+git clone https://github.com/vayct/WordClock
 cd WordClock/python/software
 sudo ./wordclock.py
 ```
