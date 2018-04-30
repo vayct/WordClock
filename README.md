@@ -47,11 +47,12 @@ Quick Installation Guide
 6. In the Makefile, change the line `HARDWARE_DESC?=regular` to `HARDWARE_DESC?=adafruit-hat`
 
 7. Then, in the root directory for the matrix library `/rpi-rgb-led-matrix `, type in the following commands:
-`sudo apt-get update && sudo apt-get install python2.7-dev python-pillow -y
 
-make build-python
+`sudo apt-get update && sudo apt-get install python2.7-dev python-pillow -y`
 
-sudo make install-python`
+`make build-python`
+
+`sudo make install-python`
 
 
 
