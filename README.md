@@ -48,7 +48,9 @@ Quick Installation Guide
 
 7. Then, in the root directory for the matrix library `/rpi-rgb-led-matrix `, type in the following commands:
 `sudo apt-get update && sudo apt-get install python2.7-dev python-pillow -y
+
 make build-python
+
 sudo make install-python`
 
 
