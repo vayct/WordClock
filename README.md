@@ -15,6 +15,7 @@ your Python scripts using sudo.
 
 
 
+
 Overview
 ========
 
@@ -22,6 +23,9 @@ This project is based on using:
 - 32x32 RGB LED matrix panel from Adafruit: https://www.adafruit.com/product/607
 - Adafruit RGB Matrix HAT from https://www.adafruit.com/product/2345
 - Raspberry Pi 3 B+
+- hzeller's led-matrix library from https://github.com/hzeller/rpi-rgb-led-matrix
+- slight modification of brettoliver's wordclock faceplate from https://github.com/brettoliver/wordclock
+- dylex's 10x20B.bdf font file from https://github.com/dylex/fonts
 
 
 Quick Installation Guide
@@ -33,7 +37,10 @@ Quick Installation Guide
    
 2. Log in to the Raspberry Pi and set up timezone by running `sudo raspi-config`
 
-3. Configure the RTC
+3. Configure the RTC at https://www.raspberrypi.org/forums/viewtopic.php?f=66&t=125003
+- Note that the RTC is a `ds1307`
+
+
 
 
 
