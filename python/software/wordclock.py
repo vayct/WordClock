@@ -3,7 +3,7 @@ from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
 import math
-import socket
+import socket, errno
 from datetime import datetime
 from string import digits
 
@@ -444,8 +444,14 @@ class WordClock(SampleBase):
     #For getting the IP address of LAN, based on link:
     #https://stackoverflow.com/questions/166506/finding-local-ip-addresses-using-pythons-stdlib
     def get_ip(self):
-    	IP= ((([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2] if not ip.startswith("127.")] or [[(s.connect(("8.8.8.8", 53)), s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET, socket.SOCK_DGRAM)]][0][1]]) + ["No IP Found"])[0])
-    	s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+
+
+    	try:
+    		IP= ((([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2] if not ip.startswith("127.")] or [[(s.connect(("8.8.8.8", 53)), s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET, socket.SOCK_DGRAM)]][0][1]]) + ["No IP Found"])[0])
+    		s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+	except socket.error as e:
+		return "No connection"
     	return IP
 
     #For testing all the time combinations quickly
