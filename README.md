@@ -30,6 +30,15 @@ This project is based on using:
 
 Quick Installation Guide
 ========================
+```shell
+git clone https://github.com/vayct/WordClock
+cd WordClock/python/software
+sudo ./wordclock.py
+```
+If cloning this repo and doing the following commands fail, follow the steps below.
+
+
+
 
 1. Connect the Pi to the Adafruit RGB Matrix HAT, and then connect the HAT to the LED matrix panel.
    Additional instructions can be found on: https://learn.adafruit.com/adafruit-rgb-matrix-plus-real-time-clock-hat-for-raspberry-pi/driving-matrices
@@ -54,12 +63,15 @@ make build-python
 sudo make install-python
 ```
 
-8. Now, change into the directory `cd bindings/python/`
+8. Now `cd` to home directory and do `git clone https://github.com/vayct/WordClock`
 
-9. Clone this repo with 'git clone https://github.com/vayct/WordClock'
+9. Copy the software directory in this repo to /rpi-rgb-led-matrix/bindings/python directory using:
 
-10. 
+   `cp WordClock/python/software/ rpi-rgb-led-matrix/bindings/python -r`
 
 
+10. Change to the directory `cd rpi-rgb-led-matrix/bindings/python/software/`
+
+11. Start the clock by using `sudo ./wordclock.py`
 
 
