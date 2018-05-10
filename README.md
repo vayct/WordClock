@@ -79,3 +79,4 @@ Issues
 ======
 
 1. The final.stl file does not fit the led matrix, the inner frame will need to be centered and a little bit larger.
+2. Due to some weird power issues, sometimes unplugging the power supply while the led matrix is still on can fry the Raspberry Pi.
